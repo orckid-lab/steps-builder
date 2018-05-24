@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<form action="javascript:;">
+    <div sb-wrapper="wrapper-1">
+        <div sb-number="1">
+            <h2>Step 1</h2>
+        </div>
+        <div class="hide" sb-number="2">
+            <h2>Step 2</h2>
+        </div>
+        <div class="hide" sb-number="3">
+            <h2>Step 3</h2>
+        </div>
+        <div class="hide" sb-number="4">
+            <h2>Step 4</h2>
+            <label for="value-blue">Blue</label>
+            <input id="value-blue" type="radio" name="pill" value="1">
+            <label for="value-red">Red</label>
+            <input id="value-red" type="radio" name="pill" value="2">
+        </div>
+        <div class="hide" sb-number="5">
+            <h2>Step 5</h2>
+            <p>Blue chosen</p>
+        </div>
+        <div class="hide" sb-number="6">
+            <h2>Step 6</h2>
+            <p>Red chosen</p>
+        </div>
+        <div class="hide" sb-number="7">
+            <h2>Step 7 (Final)</h2>
+        </div>
+        <div>
+            <button type="button" sb-restart>Restart</button>
+            <button type="button" sb-previous>Previous</button>
+            <button type="button" sb-next>Next</button>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+<div id="app">
+    <pre>
+        {{ $data }}
+    </pre>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.8/vue.min.js"></script>
+<script src="dist/index.js"></script>
+</html>

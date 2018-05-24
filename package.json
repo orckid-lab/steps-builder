@@ -1,0 +1,15 @@
+{
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT",
+  "main": "src/js/step-navigation.js",
+  "name": "steps-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm-x/steps-navigation.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
